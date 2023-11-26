@@ -1,5 +1,8 @@
 const jwt = require('jsonwebtoken');
 
+const authService = new AuthService();
+export default authService;
+
 const secret = 'mysecretssshhhhhhh';
 const expiration = '2h';
 
