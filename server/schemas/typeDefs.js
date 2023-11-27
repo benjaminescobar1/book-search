@@ -1,45 +1,41 @@
 const { gql } = require('apollo-server-express');
 
+// Double check all required fields to ensure they make sense
 const typeDefs = gql`
-    type Book {
-        bookId: String
-        authors: [String]
-        description: String
-        title: String
-        image: String
-        link: String   
-    }
-    type User {
+    type User { 
         _id: ID
-        username: String
-        email: String
+        username: String!
+        email: String!
         bookCount: Int
         savedBooks: [Book]
     }
-
+    type Book {
+        bookId: String
+        authors: [String]
+        description: String!
+        title: String!
+        image: String
+        link: String
+    }
     type Auth {
         token: ID!
         user: User
     }
-
     type Query {
-        # Because we have the context functionality in place to check a JWT and decode its data, we can use a query that will always find and return the logged in user's data
         me: User
     }
-
-    input BookInput {
-        authors: [String]
-        description: String
+    input SaveBookInput {
         bookId: String
+        authors: [String]
+        description: String!
+        title: String!
         image: String
         link: String
-        title: String
     }
-
     type Mutation {
-        addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
-        saveBook(input: BookInput): User
+        addUser(username: String!, email: String!, password: String!): Auth
+        saveBook(input: SaveBookInput): User
         removeBook(bookId: String!): User
     }
 `;
