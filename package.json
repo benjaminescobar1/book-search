@@ -1,11 +1,11 @@
 {
-  "name": "book-search-engine",
+  "name": "googlebooks-app",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
-    "develop": "npx concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm install && npm run build"
@@ -18,9 +18,5 @@
     "dotenv": "^16.3.1",
     "express": "^4.17.1",
     "graphql": "^15.5.0"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.2",
-    "@babel/plugin-proposal-private-property-in-object": "^1.0.0"
   }
 }
