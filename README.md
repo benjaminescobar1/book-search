@@ -9,7 +9,8 @@
 
 
   ## Description:
-  This application serves as a book search engine. The application allows users to search for books and save them to their accounts. This build utilizes React app, RESTful API to GraphQL API refactoring code to make work.
+  This application serves as a book search engine. The application allows users to search for books and save them to their accounts. This build utilizes React app, RESTful API to GraphQL 
+  API refactoring code to make work.
 
   ## Installation:
   1. Need to clone the repository.
@@ -19,7 +20,8 @@
   5. Connects to localhost:3000 and use in browser
 
   ## Usage:
-  Users can deploy Heroku application or use localhost:3000 to use the app. To use localhost server clone repository, run npm install, then npm run develop. After localhost:3000 will appear in terminal.
+  Users can deploy Heroku application or use localhost:3000 to use the app. To use localhost server clone repository, run npm install, then npm run develop. After localhost:3000 will 
+  appear in terminal.
 
   ## Contributions:
   Contributions are always welcomed.
@@ -31,7 +33,13 @@
   Any questions reach out to bescobar1992@gmail.com or benjaminescobar1 on github.
 
   ## Heroku
-  https://drive.google.com/file/d/1dCYvO1we2RFkImN9HFw_D6xU-oIzv51L/view
-
+  https://book-search-engine-0-a19814075c66.herokuapp.com/
+  
   ## Screenshot
+  
+![book search screenshot](https://github.com/benjaminescobar1/book-search/assets/135399618/8cc599b2-5987-4559-9142-8c3061466cb9)
+![Screenshot 2023-11-26 181847](https://github.com/benjaminescobar1/book-search/assets/135399618/931492e3-e244-440b-9498-6a08cb0e091d)
+![Screenshot 2023-11-26 184033](https://github.com/benjaminescobar1/book-search/assets/135399618/516afd16-a710-4b22-8424-e3ba408d35e1)
+
+
   
